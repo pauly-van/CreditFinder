@@ -161,7 +161,7 @@ describe('Discover', function() {
       it ('has a prefix of ' + prefix + ' and a length of 19', function() {
         detectNetwork(prefix + '4567890123456789').should.equal('Discover');
       });  
-    }); (prefix); 
+    }) (prefix); 
   }
 });
 
@@ -172,7 +172,7 @@ describe('Maestro', function() {
       it('has a prefix of 5018 and a length of ' + length, function() {
         detectNetwork('5018' + digit).should.equal('Maestro');
       });
-    }); (length);
+    }) (length);
   }
 
   for (let length = 12, digit = '56478901'; length <= 19; length++, digit += 'x') {
@@ -180,7 +180,7 @@ describe('Maestro', function() {
       it('has a prefix of 5020 and a length of ' + length, function() {
         detectNetwork('5020' + digit).should.equal('Maestro');
       });
-    }); (length);
+    }) (length);
   }
 
   for (let length = 12, digit = '56478901'; length <= 19; length++, digit += 'x') {
@@ -188,7 +188,7 @@ describe('Maestro', function() {
       it('has a prefix of 5038 and a length of ' + length, function() {
         detectNetwork('5038' + digit).should.equal('Maestro');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 12, digit = '56478901'; length <= 19; length++, digit += 'x') {
@@ -196,7 +196,7 @@ describe('Maestro', function() {
       it('has a prefix of 6304 and a length of ' + length, function() {
         detectNetwork('6304' + digit).should.equal('Maestro');
       });
-    }); (length);
+    }) (length);
   }
 });
 
@@ -215,7 +215,7 @@ describe('China UnionPay', function() {
       it('has a prefix of ' + prefix + ' and a length of 19', function() {
         detectNetwork(prefix + '7890123456789').should.equal('China UnionPay');
       });  
-    }); (prefix); 
+    }) (prefix); 
   }
 
   for (let prefix = 624; prefix <= 626; prefix++) {
@@ -232,7 +232,7 @@ describe('China UnionPay', function() {
       it('has a prefix of ' + prefix + ' and a length of 19', function() {
         detectNetwork(prefix + '4567890123456789').should.equal('China UnionPay');
       });
-    }); (prefix); 
+    }) (prefix); 
   }
    
   for (let prefix = 6282; prefix <= 6288; prefix++) {
@@ -249,7 +249,7 @@ describe('China UnionPay', function() {
       it('has a prefix of ' + prefix + ' and a length of 19', function() {
         detectNetwork(prefix + '567890123456789').should.equal('China UnionPay');
       });
-    }); (prefix);
+    }) (prefix);
   }
 });
 
@@ -262,7 +262,7 @@ describe('Switch', function() {
       it('has a prefix of 4903 and a length of ' + length, function() {
         detectNetwork('4903' + digit).should.equal('Switch');
       });
-    }); (length);
+    }) (length);
   }
   
   for (let length = 16, digit = '567890123456'; length <= 19; length++, digit += 'x') {
@@ -273,7 +273,7 @@ describe('Switch', function() {
       it('has a prefix of 4905 and a length of ' + length, function() {
         detectNetwork('4905' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '567890123456'; length <= 19; length++, digit += 'x') {
@@ -284,7 +284,7 @@ describe('Switch', function() {
       it('has a prefix of 4911 and a length of ' + length, function() {
         detectNetwork('4911' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '567890123456'; length <= 19; length++, digit += 'x') {
@@ -295,7 +295,7 @@ describe('Switch', function() {
       it('has a prefix of 4936 and a length of ' + length, function() {
         detectNetwork('4936' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '567890123456'; length <= 19; length++, digit += 'x') {
@@ -306,7 +306,7 @@ describe('Switch', function() {
       it('has a prefix of 6333 and a length of ' + length, function() {
         detectNetwork('6333' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '567890123456'; length <= 19; length++, digit += 'x') {
@@ -317,7 +317,7 @@ describe('Switch', function() {
       it('has a prefix of 6759 and a length of ' + length, function() {
         detectNetwork('6759' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '7890123456'; length <= 19; length++, digit += 'x') {
@@ -328,7 +328,7 @@ describe('Switch', function() {
       it('has a prefix of 564182 and a length of ' + length, function() {
         detectNetwork('564182' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 
   for (let length = 16, digit = '7890123456'; length <= 19; length++, digit += 'x') {
@@ -339,6 +339,6 @@ describe('Switch', function() {
       it('has a prefix of 633110 and a length of ' + length, function() {
         detectNetwork('633110' + digit).should.equal('Switch');
       });
-    }); (length); 
+    }) (length); 
   }
 });
