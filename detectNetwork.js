@@ -2,10 +2,12 @@
 // name of a network, like 'MasterCard' or 'American Express'
 // Example: detectNetwork('343456789012345') should return 'American Express'
 
-// How can you tell one card network from another? Easy! 
+// How can you tell one card network from another?
 // There are two indicators:
 //   1. The first few numbers (called the prefix)
 //   2. The number of digits in the number (called the length)
+
+//Making sure the unit tests are working below:
 
 var detectNetwork = function(cardNumber) {
   // The Diner's Club network always starts with a 38 or 39 and is 14 digits long
